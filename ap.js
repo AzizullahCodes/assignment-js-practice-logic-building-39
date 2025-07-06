@@ -23,96 +23,162 @@ Use a for loop to print each character in the string "JavaScript".
 // }
 
 /*_______________________________  Question no 3 ____________________________________
-Count Vowels in a Word
+Print a Square of Stars
+Question: Use nested for loops to print a 4x4 square of stars.
+
+✅ Expected Output:
+
+* * * *
+* * * *
+* * * *
+* * * *
+/*________________________ Answer ____________________________________ */
+// function looping(){let pattern = '';
+//     for(let i = 1 ; i <=4; i++){
+//         for ( let j = 1 ; j <=4; j++){console.log(pattern = pattern + '*')}
+//     pattern = pattern + '<br>'}
+// }
+// function looping() {
+//   let output = "";
+
+//   for (let i = 0; i < 4; i++) {
+//     for (let j = 0; j < 4; j++) {
+//       output += "* ";
+//     }
+//     output += "<br>"; // new line after each row
+//   }
+
+//   document.getElementById("myDiv").innerHTML = output;
+// }
+
+/*_______________________________  Question no 4 ____________________________________
+print a Right-Angled Triangle of Stars
+Question: Use nested loops to print a triangle with 5 rows.
+
+✅ Expected Output:
+
+*
+* *
+* * *
+* * * *
+* * * * *
+*/
+/*________________________ Answer ____________________________________ */
+// function looping(){let pattern = '';
+//     for(let i = 0 ; i <= 5; i++){for(let j = 0 ; j <i; j++)
+//     {pattern = pattern + '*';}
+//     pattern = pattern +  '<br>';
+
+//     }
+//     document.getElementById('myDiv').innerHTML = pattern;
+// }
+
+/*_______________________________  Question no 5 ____________________________________
+Multiplication Table (1 to 5)
+Question: Print multiplication tables from 1 to 5 using nested loops.
+
+✅ Expected Output (sample):
+
+1 x 1 = 1
+1 x 2 = 2
+...
+5 x 10 = 50
+*/
+/*________________________ Answer ____________________________________ */
+// function looping(){let table = '';
+//     for(let i = 1; i <=5; i++){
+//         for(let j = 1; j <= 10; j++){table = table + i+ '*' + j + '='+ i * j + '<br>'}
+//         table = table + '<br>'
+//     }
+//     document.getElementById('myDiv').innerHTML = table;
+// }
+/*_______________________________  Question no 6 ____________________________________
+ Create a Simple Object
 Question:
-Use a for loop to count how many vowels (a, e, i, o, u) are in the word "development".
+Create an object named student with properties:
+name: "Ali"
+age: 20
+class: "10th"
+
+Expected Output:
+Print the object. Output should look like:
+
+{name: "Ali", age: 20, class: "10th"}
 */
 /*________________________ Answer ____________________________________ */
-function looping(){let vowel = '';
-    let word = 'development';
-    for(let i = 0; i < word.length; i++){if(word[i] === 'a' 
-    )}
-}
+// let student = {name : 'Ali',
+//     age : 20,
+//     class: '10th',
+// }
+// console.log(student)
+/*_______________________________  Question no 7 ____________________________________
+ Access Object Properties
+Question:
+Use the object student from Task 1 and print only the student's name and class.
 
-/*___________________________________________________________________________________*/
+Expected Output:
 
-
-
-
-/*===========================================================================*/
-/*_______________________________  Question no 1 ____________________________________
-
-*/
-/*________________________ Answer ____________________________________ */
-
-
-/*___________________________________________________________________________________*/
-
-
-
-
-/*===========================================================================*/
-/*_______________________________  Question no 1 ____________________________________
+Ali  
+10th
 
 */
 /*________________________ Answer ____________________________________ */
+// let student = {name : 'ali',
+//     age : 20,
+//     class : '10th'
+// }
+// console.log(student.name);
+// console.log(student.class);
 
+/*_______________________________  Question no 8 ____________________________________
+Add a New Property
+Question:
+Add a new property to the student object:
+city: "Lahore"
+Then print the updated object.
 
-/*___________________________________________________________________________________*/
+Expected Output:
 
-
-
-
-/*===========================================================================*/
-/*_______________________________  Question no 1 ____________________________________
-
+{name: "Ali", age: 20, class: "10th", city: "Lahore"}
 */
 /*________________________ Answer ____________________________________ */
+// let student = {name : 'aziz',
+//     age : 20,
+//     class : '10th',
 
+// }
+// console.log(student);
+// // student.city = 'Lahore';
+// // console.log(student);
+// // student.age = 21;
+// // console.log(student);
+// // let check = student.hasOwnProperty('namer')
+// // console.log(check)
+// for(let keyu in student){console.log(keyu+ ': ' + student[keyu])}
 
-/*___________________________________________________________________________________*/
+/*_______________________________  Question no 9 ____________________________________
+array in object
+________________________ Answer ____________________________________ */
+// let carDetail = {model : 'Gli',
+//     year : 2023,
+//     color : 'red', 
+//     qualities : ['speedy','protected','attractive']
+// }
+// console.log(carDetail);
+// console.log(carDetail.qualities[1] )
 
-
-
-/*===========================================================================*/
-/*_______________________________  Question no 1 ____________________________________
-
-*/
+/*_______________________________  Question no 10 ____________________________________
+another object inside an object
 /*________________________ Answer ____________________________________ */
-
-
-/*___________________________________________________________________________________*/
-
-
-
-/*===========================================================================*/
-/*_______________________________  Question no 1 ____________________________________
-
-*/
-/*________________________ Answer ____________________________________ */
-
-
-/*___________________________________________________________________________________*/
-
-
-
-/*===========================================================================*/
-/*_______________________________  Question no 1 ____________________________________
-
-*/
-/*________________________ Answer ____________________________________ */
-
-
-/*___________________________________________________________________________________*/
-
-
-/*===========================================================================*/
-/*_______________________________  Question no 1 ____________________________________
-
-*/
-/*________________________ Answer ____________________________________ */
-
-
+// let countryDetail = {name : 'Pakistan',
+//     founderName : 'Quaid',
+//     provinces : 4,
+//     punjab : {disricts : 40, 
+//         tehsils : 160,
+//         division : 20,
+//     }
+// }
+// console.log(countryDetail.punjab.division)
 /*___________________________________________________________________________________*/
 
 
