@@ -1,0 +1,66 @@
+/* ques no 21 */
+/* nav{background-color: aqua;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-left: 40px;
+padding-right: 40px;}
+
+#logo{font-size: 50px;}
+
+#nav {display: flex;
+gap:40px;
+flex-wrap: wrap;}
+
+#nav li{list-style: none;
+font-size: 20px;
+}
+#btn{display: none;}
+
+@media(max-width:500px){#nav{display: none;}
+#btn{display: block;}
+.act{display: block;}} */
+
+nav {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#logo {
+  font-size: 50px;
+}
+
+#nav {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+#nav li {
+  list-style: none;
+  font-size: 20px;
+}
+
+#btn {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  #nav {
+    display: none;
+  }
+
+  #btn {
+    display: block;
+  }
+
+  .act {
+    display: block;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
