@@ -477,68 +477,104 @@ Product 1: Apple - 100
 Product 2: Banana - 40
 
 /*________________________ Answer ____________________________________ */
-let objectInsideArray = [{name : 'Apple',
-  price : 200
-},
-  {name :'Banana',
-    price : 200
-  }
-]
+// let objectInsideArray = [{name : 'Apple',
+//   price : 200
+// },
+//   {name :'Banana',
+//     price : 200
+//   }
+// ]
 
-for(let i = 0; i< objectInsideArray.length; i++){console.log(objectInsideArray[i].name + ': ' + objectInsideArray[i].price)}
-/*___________________________________________________________________________________*/
+// for(let i = 0; i< objectInsideArray.length; i++){console.log(objectInsideArray[i].name + ': ' + objectInsideArray[i].price)}
 
+/*_______________________________  Question no 28 ____________________________________
 
-
-/*===========================================================================*/
-/*_______________________________  Question no 1 ____________________________________
-
-*/
+Object with Nested Object
+Question:
+Create an object user with properties:
+name
+age
+address → nested object with city and country
+Expected Output:
+City: Karachi  
+Country: Pakistan
 /*________________________ Answer ____________________________________ */
+// let person = {name : 'Aziz',
+//   age : 25,
+//   address : {city : 'Karachi',
+//     country : 'Pakistan'
+//   }
+// }
+// console.log(person);
+// console.log(person.address)
+/*_______________________________  Question no 29 ____________________________________
+Loop Through Object Properties
+Question:
+Create an object fruit with 3 key-value pairs:
+apple: 50, banana: 30, orange: 60
+Use a for...in loop to print each fruit and its price.
+Expected Output:
 
-
-/*___________________________________________________________________________________*/
-
-
-
-/*===========================================================================*/
-/*_______________________________  Question no 1 ____________________________________
-
-*/
+apple: 50  
+banana: 30  
+orange: 60
 /*________________________ Answer ____________________________________ */
+// let fruit = {apple : 50,
+//   banana : 30,
+//   orange : 60
+// }
+// for(let items in fruit){console.log(items + ': ' + fruit[items])}
 
+/*_______________________________  Question no 30 ____________________________________
+ Array of Students (Object Array)
+Question:
+Create an array of 3 student objects. Each student has:
 
-/*___________________________________________________________________________________*/
+name
 
+marks
 
-/*===========================================================================*/
-/*_______________________________  Question no 1 ____________________________________
+Use a loop to print:
 
-*/
+Student 1: Zara - 85  
+Student 2: Ahmed - 90  
+Student 3: Sara - 78
 /*________________________ Answer ____________________________________ */
+// let sttudents = [
+//   {name : 'Aziz',
+//     marks : 400
+//   },
+//   {name : 'Nbeel',
+//     marks : 540
+//   },
+//   {name : 'Hashir',
+//     marks : 345
+//   }
+// ]
+// for(let i = 0; i < sttudents.length; i++){console.log(sttudents[i].name + ': ' + sttudents[i].marks)}
 
-
-/*___________________________________________________________________________________*/
-
-
-
-
-/*===========================================================================*/
-/*_______________________________  Question no 1 ____________________________________
-
-*/
+/*_______________________________  Question no 31 ____________________________________
+Loop Through Object with Prices
+Question:
+Create an object items with 3 key-value pairs:
+pen: 10, pencil: 5, eraser: 7
+Use a for...in loop to print each item and its price.
+Expected Output:
+pen: 10  
+pencil: 5  
+eraser: 7
 /*________________________ Answer ____________________________________ */
+// let stationery = {pern : 10,
+//   perncil : 5,
+//   eraser : 7
+// }
+// for(let item in stationery){console.log(item + ': ' + stationery[item])}
+/*_______________________________  Question no 32 ____________________________________
 
-
-/*___________________________________________________________________________________*/
-
-
-/*===========================================================================*/
-/*_______________________________  Question no 1 ____________________________________
-
-*/
 /*________________________ Answer ____________________________________ */
-
+// function naving(){let get = document.getElementById('navUl');
+//   get.classList.toggle('newy')
+// }
 
 /*___________________________________________________________________________________*/
 

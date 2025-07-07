@@ -21,7 +21,7 @@ font-size: 20px;
 #btn{display: block;}
 .act{display: block;}} */
 
-nav {
+/* nav {
   background-color: aqua;
   display: flex;
   justify-content: space-between;
@@ -63,4 +63,27 @@ nav {
     flex-direction: column;
     gap: 10px;
   }
-}
+} */
+
+
+/* ques no 31 */
+nav{background-color: aqua;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-right: 40px;
+padding-left: 40px;}
+
+#navUl{display: flex;
+gap:60px;
+flex-wrap: wrap;}
+
+#navUl li{list-style: none;}
+
+#navUl li a{text-decoration: none;}
+
+.btn{display: none;}
+
+@media(max-width:700px){#navUl{display: none;}
+.btn{display: block;}
+.newy{display: block;}}
