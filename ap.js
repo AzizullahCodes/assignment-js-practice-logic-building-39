@@ -377,91 +377,115 @@ object inside an array
 // console.log(details);
 // for(let i = 0; i<details.length; i++){console.log(details[i].name)}
 
-/*___________________________________________________________________________________*/
-
-
-/*===========================================================================*/
-/*_______________________________  Question no 1 ____________________________________
-
-*/
+/*_______________________________  Question no 21 ____________________________________
+function in an object
 /*________________________ Answer ____________________________________ */
-// function functioning(){let getList = document.getElementById('nav');
-//     getList.classList.toggle('act');
+// var employee = {designation : 'Graphic Designer',
+//   gender : 'male',
+//   skills :['adobe','photoshop'],
+//   intro : function(){console.log('my name is john and i am working in codeAlpha company')}
+
 // }
+// console.log(employee)
+// employee.intro()
 
 
-function functioning() {
-  let getList = document.getElementById('nav');
-  getList.classList.toggle('act');
-}
-/*___________________________________________________________________________________*/
 
 
-/*===========================================================================*/
-/*_______________________________  Question no 1 ____________________________________
+/*_______________________________  Question no 22 ____________________________________
 
-*/
+Anonymous function
 /*________________________ Answer ____________________________________ */
 
+// let greet = function(){console.log('Hello! in javascript')}
+// greet()
+/*_______________________________  Question no 23 ____________________________________
 
-/*___________________________________________________________________________________*/
+ Create and Print an Object
+Question:
+Create an object called student with the following properties:
 
+name (string)
 
+age (number)
 
-/*===========================================================================*/
-/*_______________________________  Question no 1 ____________________________________
-
-*/
+grade (string)
 /*________________________ Answer ____________________________________ */
+// let student = {name : 'Aziz',
+//   age : 23,
+//   grade : 'A'
+// }
+// console.log(student.name);
+// console.log(student.age);
+// console.log(student.grade)
 
+/*_______________________________  Question no 24 ____________________________________
+Add New Property to Object
+Question:
+Create an object car with brand and model. Then add a new property color and assign a value.
 
-/*___________________________________________________________________________________*/
+Expected Output:
+Show the full object before and after adding the new property.
 
-
-
-
-/*===========================================================================*/
-/*_______________________________  Question no 1 ____________________________________
-
-*/
+Before: { brand: "Toyota", model: "Corolla" }  
+After: { brand: "Toyota", model: "Corolla", color: "White" }
 /*________________________ Answer ____________________________________ */
+// let car = {brand : 'Toyota',
+//   model : 2024
+// }
+// car.color = 'black';
+// console.log(car)
 
+/*_______________________________  Question no 25 ____________________________________
+Change a Value in Object
+Question:
+Create an object book with title, author, and year. Then change the year value.
 
-/*___________________________________________________________________________________*/
-
-
-
-
-/*===========================================================================*/
-/*_______________________________  Question no 1 ____________________________________
-
-*/
+Expected Output:
+Before: year = old value
+After: year = new value
 /*________________________ Answer ____________________________________ */
+// let book = {title : 'Islam',
+//   author : 'Iqbal',
+//   year : 2023
+// }
+// console.log(book);
+// book.year = '1990'
+// console.log(book)
 
 
-/*___________________________________________________________________________________*/
-
-
-
-
-/*===========================================================================*/
-/*_______________________________  Question no 1 ____________________________________
-
-*/
+/*_______________________________  Question no 26 ____________________________________
+ Object with Array Value
+Question:
+Create an object person with a property hobbies that is an array with 3 values.
+Expected Output:
+Access and print the second hobby.
+Example:
+Second Hobby: Reading
 /*________________________ Answer ____________________________________ */
+// let person = {hobbies:['reading','playing','driving']}
+// console.log(person.hobbies[1])
 
+/*_______________________________  Question no 27 ____________________________________
+ Object Inside Array
+Question:
+Create an array of 2 objects. Each object should represent a product with name and price.
+Expected Output:
+Print the name and price of each product.
 
-/*___________________________________________________________________________________*/
+Product 1: Apple - 100  
+Product 2: Banana - 40
 
-
-
-/*===========================================================================*/
-/*_______________________________  Question no 1 ____________________________________
-
-*/
 /*________________________ Answer ____________________________________ */
+let objectInsideArray = [{name : 'Apple',
+  price : 200
+},
+  {name :'Banana',
+    price : 200
+  }
+]
 
-
+for(let i = 0; i< objectInsideArray.length; i++){console.log(objectInsideArray[i].name + ': ' + objectInsideArray[i].price)}
 /*___________________________________________________________________________________*/
 
 
