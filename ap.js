@@ -814,16 +814,42 @@ email: ali@example.com
 //     ans.innerHTML = '';
 //     for(let ky in converStringToOrigional){ans.innerHTML = ans.innerHTML + ky + ': ' + converStringToOrigional[ky] + '<br>'}
 //  }
-/*___________________________________________________________________________________*/
 
+/*_______________________________  Question no 43 ____________________________________
+Store Student Info
+Question:
+Create a student object with name, roll number, and class.
+Convert it to a string and store it in localStorage.
+Then retrieve it, convert it back to object, and display each property on the screen.
 
+Expected Output:
 
-/*===========================================================================*/
-/*_______________________________  Question no 1 ____________________________________
+name: Ahmed  
+roll: 123  
+class: 10th
 
-*/
 /*________________________ Answer ____________________________________ */
+// const student = {name : 'Hmza',
+//     rollNo : 324,
+//     class : '10th'
+// }
+// console.log(student, typeof student);
+// let converObjectToString = JSON.stringify(student);
+// console.log(converObjectToString, typeof converObjectToString);
+// localStorage.setItem('studentDetail',converObjectToString);
+// console.log(converObjectToString)
+// let converStringToOrigional = JSON.parse(converObjectToString);
+// console.log(converStringToOrigional, typeof converStringToOrigional)
 
+// function showing(){let  result = document.getElementById('display');
+//     result.innerHTML = '';
+//     for(let ab in converStringToOrigional){result.innerHTML = result.innerHTML + ab + ':' + converStringToOrigional[ab] + '<br>'}
+// }
+
+// function removing(){let result = document.getElementById('display');
+//     result.innerHTML = '';
+//     for(let ab in converStringToOrigional){localStorage.removeItem(converStringToOrigional.name)}
+// }
 
 /*___________________________________________________________________________________*/
 
