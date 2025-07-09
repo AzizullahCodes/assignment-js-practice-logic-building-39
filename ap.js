@@ -570,124 +570,250 @@ eraser: 7
 // }
 // for(let item in stationery){console.log(item + ': ' + stationery[item])}
 /*_______________________________  Question no 32 ____________________________________
+ Save User Name
+Question:
+Ask the user to enter their name using prompt() and save it in localStorage.
 
+Expected Output:
+If the user enters "Ali", it should be saved in localStorage with key "username".
+Open browser dev tools → Application → Local Storage → You should see:
+Key: username  
+Value: Ali
 /*________________________ Answer ____________________________________ */
-// function naving(){let get = document.getElementById('navUl');
-//   get.classList.toggle('newy')
+// function saveData(){const get = document.getElementById('userinput').value;
+//     localStorage.setItem('myname',get)
 // }
 
-/*___________________________________________________________________________________*/
+/*_______________________________  Question no 33 ____________________________________
+Show Welcome Message
+Question:
+Check if the key "username" exists in localStorage.
+If it exists, show: Welcome Ali!
+If not, show: No user found.
 
-
-
-/*===========================================================================*/
-/*_______________________________  Question no 1 ____________________________________
-
-*/
+Expected Output:
+If "username" is already saved → Welcome Ali!
+If not → No user found.
 /*________________________ Answer ____________________________________ */
+// localStorage.setItem('myFirstName','Zarmeen')
+// const  check = localStorage.getItem('myFirstName')
+
+// console.log(check);
+// const isAvaiblde = check;
+// if(isAvaiblde){console.log('welcome' + localStorage.getItem('myFirstName'))}
+// else{console.log('not')}
+/*_______________________________  Question no 34 ____________________________________
+Save and Show User Age
+Question:
+Ask the user for their age using prompt(), and save it to localStorage with the key "age".
+Then show: "Your age is 25" (if user entered 25).
+
+Expected Output:
+If user enters 30 → Your age is 30
+If user enters 18 → Your age is 18
 
 
-/*___________________________________________________________________________________*/
-
-
-
-
-/*===========================================================================*/
-/*_______________________________  Question no 1 ____________________________________
-
-*/
 /*________________________ Answer ____________________________________ */
+// function saveAge(){const getAge = document.getElementById('userinput').value;
+//     localStorage.setItem('age',getAge);
+//     let ans = localStorage.getItem('age');
+//     document.getElementById('display').textContent = 'Your age is ' + ans;
+// }
 
+/*_______________________________  Question no 35 ____________________________________
 
-/*___________________________________________________________________________________*/
+Check Login Status
+Question:
+Check if the key "isLoggedIn" exists in localStorage.
+If it exists and value is "true", show: You are logged in.
+Otherwise, show: Please log in first.
 
-
-
-
-/*===========================================================================*/
-/*_______________________________  Question no 1 ____________________________________
-
-*/
+Expected Output:
+If isLoggedIn = "true" → You are logged in.
+If isLoggedIn = "false" or not exist → Please log in first.
 /*________________________ Answer ____________________________________ */
+// function saving(){const get = document.getElementById('userinput').value;
+//     localStorage.setItem('isLogged',get);
+//     let ans = localStorage.getItem('isLogged');
+//     if(ans === 'true'){document.getElementById('display').textContent = 'you are logged in'}
+
+// else{document.getElementById('display').innerHTML = 'Not existence found'}}
 
 
-/*___________________________________________________________________________________*/
+/*_______________________________  Question no 36 ____________________________________
 
+ Remove Cart
+Question:
+If a key "cartItems" exists in localStorage, remove it.
+Then show message: "Cart cleared."
+If it does not exist, show: "Cart is already empty."
 
-
-
-/*===========================================================================*/
-/*_______________________________  Question no 1 ____________________________________
-
-*/
+Expected Output:
+If cartItems was saved → Cart cleared.
+If no cartItems found → Cart is already empty.
 /*________________________ Answer ____________________________________ */
+// function saving(){let get = document.getElementById('userinput').value;
+//     localStorage.setItem('cartItems',get);
+//     let check = localStorage.getItem('cartItems');
+//     let isAvaiblde = check;
+//     if(check){localStorage.removeItem('cartItems')}
+//     else{console.log('cart is already empty')}
+// }
 
 
-/*___________________________________________________________________________________*/
+/*_______________________________  Question no 37 ____________________________________
 
+ Save and Display Username
+Question:
+Ask the user to enter their name in an input field.
+When the user clicks a button, save the name in localStorage with key "username".
+Then show a message: "Welcome, [username]"
 
-
-/*===========================================================================*/
-/*_______________________________  Question no 1 ____________________________________
-
-*/
+Expected Output:
+If user enters: Ali
+You see:
+Welcome, Ali
 /*________________________ Answer ____________________________________ */
+// function saving(){const get = document.getElementById('userinput').value;
+//     localStorage.setItem('username',get);
+//     const fetchStorage = localStorage.getItem('username');
+//     document.getElementById('display').innerText = 'welcome ' + fetchStorage;
+// }
 
+/*_______________________________  Question no 38 ____________________________________
+Save and Show Cart Item
+Question:
+Create an input to enter a product name.
+When the user clicks the "Add to Cart" button, save the value in localStorage with key "cartItem".
+On page reload, display the saved product name automatically.
 
-/*___________________________________________________________________________________*/
+Expected Output:
+If user enters: Mobile
+After reload, it still shows:
+Item in your cart: Mobile
 
-
-
-/*===========================================================================*/
-/*_______________________________  Question no 1 ____________________________________
-
-*/
 /*________________________ Answer ____________________________________ */
+// function saving(){let get = document.getElementById('userinput').value;
+//     localStorage.setItem('cartItem',get);
+//     const ans = localStorage.getItem('cartItem');
+//     document.getElementById('display').textContent = 'Item in your cart: ' + ans; 
+// }
+
+//  window.onload = function(){const ans = localStorage.getItem('cartItem');
+//      if(ans){document.getElementById('display').textContent = 'Items in your cart: ' + ans}
+//  }
 
 
-/*___________________________________________________________________________________*/
+    // Show saved item on page load
+    // window.onload = function () {
+    //   const item = localStorage.getItem('cartItem');
+    //   if (item) {
+    //     document.getElementById('showItem').innerText = "Item in your cart: " + item;
+    //   }
+    // }
+
+    // function saveItem() {
+    //   const input = document.getElementById('productInput').value;
+    //   localStorage.setItem('cartItem', input);
+    //   document.getElementById('showItem').innerText = "Item in your cart: " + input;
+    // }
 
 
+/*_______________________________  Question no 39 ____________________________________
+Check if Username Exists
+Question:
+On page load, check if localStorage has the key "username".
+If yes, display: "Welcome Back, [username]"
+If not, show: "Please log in."
 
-/*===========================================================================*/
-/*_______________________________  Question no 1 ____________________________________
+Expected Output:
+If username = "Sana" in localStorage
+→ Welcome Back, Sana
+If nothing saved
+→ Please log in.
 
-*/
 /*________________________ Answer ____________________________________ */
+// const name = 'Sanaullah'
+// localStorage.setItem('username',name);
+// window.onload = function(){const get = localStorage.getItem('username');
+//     const isAvaiblde = get;
+//     if(isAvaiblde){document.getElementById('showItem').textContent = 'welcome back' + name}
+//     else{document.getElementById('showItem').textContent = 'plz login'}
+// }
 
 
-/*___________________________________________________________________________________*/
+/*_______________________________  Question no 40 ____________________________________
+Remove Stored Data
+Question:
+Make a button that removes the "username" from localStorage.
+After clicking, show the message: "Logged out"
 
-
-/*===========================================================================*/
-/*_______________________________  Question no 1 ____________________________________
-
-*/
+Expected Output:
+Before click: Welcome, Ali
+After click: Logged out
 /*________________________ Answer ____________________________________ */
+// window.onload = function(){const name = 'Ali';
+//     localStorage.setItem('username',name);
+//     const ans = localStorage.getItem('username');
+//     document.getElementById('display').textContent = "welcome"+ ' ' + ans;
+// }
 
+// function removing(){localStorage.removeItem('username');
+//     document.getElementById('display').textContent = 'logged out';
+// }
+/*_______________________________  Question no 41 ____________________________________
+Save Multiple To-Do Items
+Question:
+Create a to-do app with an input and a button.
+When a task is added, save it in localStorage using an array.
+Display all saved tasks on the page even after refresh.
 
-/*___________________________________________________________________________________*/
+Expected Output:
+If user adds:
+Buy milk
+Call friend
+It should show both on the screen after reload.
 
-
-
-
-/*===========================================================================*/
-/*_______________________________  Question no 1 ____________________________________
-
-*/
 /*________________________ Answer ____________________________________ */
+// let counter = 0;
+// function increasing(){counter++;
+//     document.getElementById('count').textContent = counter;
+// }
 
+// function decreasing(){if(counter > 0){counter--;
+//     document.getElementById('count').textContent = counter;
+// }
+        
+// }
+// function refreshing(){document.getElementById('count').innerHTML = '0';}
+/*_______________________________  Question no 42 ____________________________________
+ Show All Stored Keys and Values
+Question:
+Create a button "Show All Storage". When clicked, loop through all keys 
+using .length and .key(i), then show each key and its value on the screen.
 
-/*___________________________________________________________________________________*/
+Expected Output:
+If localStorage has username: Ali and email: ali@example.com, clicking button shows:
 
+username: Ali  
+email: ali@example.com
 
-/*===========================================================================*/
-/*_______________________________  Question no 1 ____________________________________
-
-*/
 /*________________________ Answer ____________________________________ */
+//  let person = {usname : 'Ali',
+//     email : 'ali@example.com'
+//  }
+//  console.log(person, typeof person)
+//  let converObjectToString = JSON.stringify(person);
+//  console.log(converObjectToString,typeof converObjectToString);
+//  localStorage.setItem('mystorage',converObjectToString);
+//  const converStringToOrigional = JSON.parse(converObjectToString);
+//  console.log(converStringToOrigional,typeof converStringToOrigional);
 
 
+//  function getting(){let ans = document.getElementById('result');
+//     ans.innerHTML = '';
+//     for(let ky in converStringToOrigional){ans.innerHTML = ans.innerHTML + ky + ': ' + converStringToOrigional[ky] + '<br>'}
+//  }
 /*___________________________________________________________________________________*/
 
 

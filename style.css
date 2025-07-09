@@ -87,3 +87,6 @@ flex-wrap: wrap;}
 @media(max-width:700px){#navUl{display: none;}
 .btn{display: block;}
 .newy{display: block;}}
+
+/* 41 */
+.black{background-color: black;}
