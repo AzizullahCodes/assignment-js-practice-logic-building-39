@@ -851,29 +851,55 @@ class: 10th
 //     for(let ab in converStringToOrigional){localStorage.removeItem(converStringToOrigional.name)}
 // }
 
-/*___________________________________________________________________________________*/
+/*_______________________________  Question no 44 ____________________________________
+Create and Access Object Properties
+Question:
+Create an object person with the following keys and values:
 
+name: "Ali"
 
+age: 25
 
+city: "Karachi"
 
-/*===========================================================================*/
-/*_______________________________  Question no 1 ____________________________________
+Then print the name and city using dot notation.
 
-*/
+Expected Output:
+
+Ali
+Karachi
 /*________________________ Answer ____________________________________ */
+// let person = {name : 'Ali',
+//     age : 24,
+//     city : 'karachi'
+// }
+// let get = document.getElementById('myul');
+// get.innerHTML = person.name + '<br>' + person.city
 
 
-/*___________________________________________________________________________________*/
 
+/*_______________________________  Question no 45 ____________________________________
 
+ Loop Through Object Properties
+Question:
+Create an object fruitPrices with:
+apple: 50
+banana: 30
+mango: 60
+Use a for...in loop to print each fruit and its price.
+Expected Output:
+apple: 50  
+banana: 30  
+mango: 60
 
-
-/*===========================================================================*/
-/*_______________________________  Question no 1 ____________________________________
-
-*/
 /*________________________ Answer ____________________________________ */
-
+// let fruitPrices = {apple : 50,
+//     banana : 30,
+//     mango : 60,
+// }
+// for(let key in fruitPrices){let get = document.getElementById('mydiv');
+//     get.innerHTML =get.innerHTML + key + ': ' + fruitPrices[key] + '<br>';
+// }
 
 /*___________________________________________________________________________________*/
 
