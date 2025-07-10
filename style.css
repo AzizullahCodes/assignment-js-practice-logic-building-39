@@ -1,4 +1,4 @@
-/* ques no 21 */
+ques no 21
 /* nav{background-color: aqua;
 display: flex;
 justify-content: space-between;
@@ -90,3 +90,11 @@ flex-wrap: wrap;}
 
 /* 41 */
 .black{background-color: black;}
+
+
+/* 50 */
+.pre{color: red;}
+.css{font-size: 100px;
+display: flex;
+justify-content: center;
+align-items: center;}
